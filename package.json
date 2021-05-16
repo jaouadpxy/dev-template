@@ -1,25 +1,19 @@
 {
   "name": "dev-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom Development Environment for All the Projects",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html -p 3000 --open chrome ",
-    "format": "prettier --write \"src/**/*.{js,jsx,sass,css,ts}\"",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaouadpxy/dev-template.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^7.26.0",
-    "eslint-config-prettier": "^8.3.0",
-    "prettier": "^2.3.0"
+  "bugs": {
+    "url": "https://github.com/jaouadpxy/dev-template/issues"
   },
-  "dependencies": {
-    "parcel": "^1.12.4"
-  }
+  "homepage": "https://github.com/jaouadpxy/dev-template#readme"
 }
