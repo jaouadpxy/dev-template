@@ -4,7 +4,9 @@
   "description": "Custom Development Environment for All the Projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clear-build-cache": "rm -rf .cache/ dist/",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+      "dev": "parcel src/index.html -p 3000 --open chrome"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jaouadpxy/dev-template/issues"
   },
-  "homepage": "https://github.com/jaouadpxy/dev-template#readme"
+  "homepage": "https://github.com/jaouadpxy/dev-template#readme",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  }
 }
