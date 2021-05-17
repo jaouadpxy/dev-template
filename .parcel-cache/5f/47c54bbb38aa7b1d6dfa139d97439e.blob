@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Template</title>
+</head>
+<body>
+ <h1>Test Title</h1>
+ <p>test is working</p>
+ <h2>second test</h2>
+
+ <script src="eebab773ec73f61b868d4c59c80f1070"></script>
+</body>
+</html>

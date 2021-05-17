@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "Custom Development Environment for All the Projects",
   "main": "index.js",
-  "scripts": {
-    "clear-build-cache": "rm -rf .parcel-cache/ dist/",
-    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
-      "dev": "parcel src/index.html -p 3000 --open chrome"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jaouadpxy/dev-template.git"
@@ -17,8 +12,27 @@
   "bugs": {
     "url": "https://github.com/jaouadpxy/dev-template/issues"
   },
+  "scripts": {
+    "clear-build-cache": "rm -rf .parcel-cache/ dist/",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,json,ts}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "dev": "parcel src/index.html -p 3000 --open chrome",
+    "start": "npm run dev"
+  },
   "homepage": "https://github.com/jaouadpxy/dev-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "parcel": "^1.12.3",
+    "prettier": "^2.3.0"
+  },
   "dependencies": {
-    "parcel": "^2.0.0-beta.2"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
