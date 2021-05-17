@@ -4,7 +4,7 @@
   "description": "Custom Development Environment for All the Projects",
   "main": "index.js",
   "scripts": {
-    "clear-build-cache": "rm -rf .cache/ dist/",
+    "clear-build-cache": "rm -rf .parcel-cache/ dist/",
     "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
       "dev": "parcel src/index.html -p 3000 --open chrome"
   },
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/jaouadpxy/dev-template.git"
   },
-  "author": "",
+  "author": "Jaouad Sourour",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jaouadpxy/dev-template/issues"
